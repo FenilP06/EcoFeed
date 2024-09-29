@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Forget Password</title>
+        <script>
+            function preventBack() 
+       {
+       window.history.forward();
+      
+       }
+      setTimeout("preventBack()", 0);
+      window.onunload = function () { null };
+    </script>
+    </head>
+    <form method="post" action="frg.php">
+        <table align="center" style="margin-top: 100px;">
+            <tr>
+                <td>Enter your User name : </td>
+                <td><input type="text" name="unm" placeholder="Enter your username" required="Please Enter value"></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Security question : </td>
+                <td><select name="que" class="form-control">
+                    <option class="option">What is Your last school?</option>
+                    <option class="option">Who is your favourite personality?</option>
+                    <option class="option">What is your Date of Birth?</option>
+                    <option class="option">What is your last 5 digit in your phone number ?</option>
+                    <option class="option">What is your favourite colour?</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Enter your security answer : </td>
+                <td><input type="text" name="ans" placeholder="Enter security question" required="Please Enter value"</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="submit" name="sub" value="submit"/></td>
+                <td><a href="index.html">Home</a></td>
+            </tr>
+        </table>
+    </form>
+</html>

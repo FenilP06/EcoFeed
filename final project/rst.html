@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Reset password</title>
+        <script>
+            function preventBack() 
+       {
+       window.history.forward();
+      
+       }
+      setTimeout("preventBack()", 0);
+      window.onunload = function () { null };
+      function validate()
+      {
+        var password = document.reg.pwd.value;
+        var re_pwd = document.reg.repwd.value;
+
+        if(password != re_pwd)
+        {
+            alert("Password is not verified, Re-enter both the passwords");
+            document.reg.pwd.focus();
+            return false;
+        }
+        if(password.length<6)
+        {
+            alert("Enter atleast 6 character password");
+            document.reg.pwd.focus();
+            return false;
+        }
+        if(re_pwd.length<6)
+        {
+            alert("Enter atleast 6 character password");
+            docuemnt.reg.repwd.focus();
+            return false;
+        }
+        return (true);
+      }
+      </script>
+    </head>
+    <body>
+        <form method="post" action='ret.php' name="reg" onsubmit="return validate();">
+            <table align="center" style="margin-top:100px;">
+            <tr>
+                        <td>Enter new password : </td>
+                        <td><input type="password" name="pwd" placeholder="Enter password" required="Enter value into field"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Re-Enter new password : </td>
+                    <td><input type="password" name="repwd" placeholder="Re-Enter password" required="Enter value into field"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Submit"  name="sub"></td>
+
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

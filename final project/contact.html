@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="scss/skin.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="./script/index.js"></script>
+    <script>
+        function preventBack() 
+   {
+   window.history.forward();
+
+   }
+setTimeout("preventBack()", 0);
+window.onunload = function () { null };
+
+function validate()
+{
+    var phone = document.reg.pn.value;
+    if(phone.length>10 || phone.length<10)
+    {
+        alert("Please enter 10 digit phone number");
+        document.reg.pn.focus();
+        return false;
+    
+    }
+    return (true);
+}
+</script>
+</head>
+
+<body id="wrapper">
+    <span><marquee direction="left" >Welcome To EcoFeed</marquee></span>
+    <section id="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 top-header-links">
+                    <ul class="contact_links">
+                        <li><i class="fa fa-phone"></i><a href="#">+91 8128662723</a></li>
+                        <li><i class="fa fa-envelope"></i><a href="#">ecofeed@gmail.com</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+                     <a class="navbar-brand" href="#">
+                        <h2>EcoFeed</h2><span></span></a> 
+                        <!-- <div class="logo">
+                            <img src="img/logo.png" alt="" width="130px" height="130px">   <!--110 and 65 
+                           </div> -->
+                </div>
+                <div id="navbar" class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li class="active"><a href="#contact">Contact</a></li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sign in</a>
+                                <!-- <span class="glyphicon glyphicon-chevron-right"></span></a>  -->
+                            <ul class="dropdown-menu  dropdown-menu-right">
+                                <li><a href="login.html">Admin</a></li>
+                                <li><a href="login1.html">User</a></li>
+                                </ul>
+                        </li>
+                        <li><a href="registration.html">Registration</a></li>
+                         
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+        <!--/.nav-ends -->
+    </header>
+    <section id="top_banner">
+        <div class="banner">
+            <div class="inner text-center">
+                <h2>Connect with us for better INDIA</h2>
+            </div>
+        </div>
+        <div class="page_info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-8 col-xs-6">
+                        <h4>Contact</h4>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-6" style="text-align:right;">Home<span class="sep"> / </span><span class="current">Contact</span></div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <section id="contact-page">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Drop your <span>Message</span></h2>
+                <p class="subheading"></p>
+            </div>
+            <div class="row contact-wrap">
+                <div class="status alert alert-success" style="display: none"></div>
+                <form id="main-contact-form" class="contact-form" name="contact-form" onsubmit="return validate();" method="post" action='contact.php'>
+                    <div class="col-sm-5 col-sm-offset-1">
+                        <div class="form-group">
+                            <label>Name *</label>
+                            <input type="text" name="nm" class="form-control" required="required" />
+                        </div>
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" name="em" class="form-control" required="required" />
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="number" name="pn" required="" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label>Company Name</label>
+                            <input type="text" name="cn" required="" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="form-group">
+                            <label>Subject *</label>
+                            <input type="text" name="subj" class="form-control" required="required" />
+                        </div>
+                        <div class="form-group">
+                            <label>Message *</label>
+                            <textarea name="msg" required="required" class="form-control" rows="8"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" name="sub" class="btn btn-default submit-button">Submit Message <i class="fa fa-caret-right"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="overlay">
+            <div class="gmap-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div class="gmap">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235014.29918593855!2d72.41493121847908!3d23.020158085669532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fcedd11614f6516!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1727522108545!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <!-- <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=JoomShaper,+Dhaka,+Dhaka+Division,+Bangladesh&amp;aq=0&amp;oq=joomshaper&amp;sll=37.0625,-95.677068&amp;sspn=42.766543,80.332031&amp;ie=UTF8&amp;hq=JoomShaper,&amp;hnear=Dhaka,+Dhaka+Division,+Bangladesh&amp;ll=23.73854,90.385504&amp;spn=0.001515,0.002452&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=1073661719450182870&amp;output=embed"></iframe> -->
+                            </div>
+                        </div>
+                        <div class="col-sm-7 map-content">
+                            <ul class="row">
+                                <li class="col-sm-6">
+                                    <address>
+									<h5>Head Office</h5>
+									<p>Ahmedabad , Gujarat </p>
+										<p>Phone:+91 8128662723 <br>
+									Email Address:ecofeed@gmail.com</p>
+								</address>
+
+                                </li>
+                                <!-- <li class="col-sm-6">
+                                    <address>
+									<h5>Zone#2 Office</h5>
+									<p>Aspire Software Solutions <br>
+									202, Parishram Complex,<br>
+									Mithakhali Six Roads,<br>
+									Navrangpura, Ahmedabad,<br>
+									Gujarat, India. </p>
+									<p>Phone:+91 848 594 5080 <br>
+									Email Address:sales@aspiresoftware.in</p>
+								</address>
+
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Address</h4>
+                        <hr/>
+                        <p>Ahmedabad ,Gujarat
+                        </p>
+                        <!-- <a href="#" class="learnmore">Learn More <i class="fa fa-caret-right"></i></a> -->
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Useful Links</h4>
+                        <hr/>
+                        <ul class="footer-links">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="login.html">Sign In</a></li>
+                            <li><a href="registration.html">Registration</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Contact</h4>
+                        <hr/>
+                        <p>Phone: +91 8128662723 , <br>
+
+                            Mobile No: +91 8128662723<br><br>
+
+                            Email Address : ecofeed@gmail.com</p>
+                    </div>
+                </div>  
+            </div>
+        </div> 
+   </section>
+
+    <section id="bottom-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 btm-footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+                <div class="col-md-6 col-sm-6  col-xs-12 btm-footer">
+                    Developed by: SanKalp 1.O
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="panel">
+        <div id="panel-admin">
+            <div class="panel-admin-box">
+                <div id="tootlbar_colors">
+                    <button class="color" style="background-color:#1abac8;" onclick="mytheme(0)"></button>
+                    <button class="color" style="background-color:#ff8a00;" onclick="mytheme(1)"> </button>
+                    <button class="color" style="background-color:rgba(56, 145, 21);" onclick="mytheme(2)"> </button>
+                    <button class="color" style="background-color:#e54e53;" onclick="mytheme(3)"> </button>
+                    <button class="color" style="background-color:#1abc9c;" onclick="mytheme(4)"> </button>
+                    <button class="color" style="background-color:#159eee;" onclick="mytheme(5)"> </button>
+                </div>
+            </div>
+
+        </div>
+        <a class="open" href="#"><span><i class="fa fa-gear fa-spin"></i></span></a>
+    </div>
+</body>
+
+</html>
