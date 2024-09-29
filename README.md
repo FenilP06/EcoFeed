@@ -41,6 +41,8 @@ To address these challenges, we plan to implement an additional module focused o
    - Get details about food wastage quantity and voluteer and transporter details at collection time.
    - Update the Total slurry genrated.
    - Get Details about farmer whom to distribute the slurry.
+## Flow Diagram
+![flow_diagram](https://github.com/user-attachments/assets/f142d0d1-d119-4fed-9063-edbadb7b00a3)
 
 ## Technologies Used :
 
@@ -74,7 +76,7 @@ $dbname = "food_redistribution";
 ## Future Enhancements :
   - AI-based food classification for automatic sorting of food donations.
   - Mobile app for easier access and real-time notifications.
-    
+
 ## Screen Layout :
 
 ![01](https://github.com/user-attachments/assets/e0935e4d-f7d3-404e-ba7f-36c978f093fb)
