@@ -25,6 +25,9 @@ Another challenge arises when donations include food that is half-eaten, spoiled
 ## Solution to Overcome These Challenges
 To address these challenges, we plan to implement an additional module focused on converting inedible food into slurry (fertilizer) through biogas plants. This module will collect spoiled or unusable food and send it to biogas facilities, where it will be processed and transformed into slurry. This slurry will then be distributed to local farmers, turning food waste into a valuable agricultural resource. By doing so, we can ensure that even food that cannot be consumed is repurposed in an environmentally friendly way, helping both farmers and the ecosystem, while minimizing overall waste.
 
+## Flow Diagram
+![flow_diagram](https://github.com/user-attachments/assets/f142d0d1-d119-4fed-9063-edbadb7b00a3)
+
 ## Features :
 1. Admin :
    - Assign all codes for each user after verification.
@@ -57,8 +60,6 @@ To address these challenges, we plan to implement an additional module focused o
    - Can request for slury
    - Collect their slury from the biogas plant
 
-## Flow Diagram
-![flow_diagram](https://github.com/user-attachments/assets/f142d0d1-d119-4fed-9063-edbadb7b00a3)
 
 ## Technologies Used :
 
