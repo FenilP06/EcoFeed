@@ -41,6 +41,11 @@ To address these challenges, we plan to implement an additional module focused o
    - Get details about food wastage quantity and voluteer and transporter details at collection time.
    - Update the Total slurry genrated.
    - Get Details about farmer whom to distribute the slurry.
+6. Farmers :
+   - Edit their profile information anytime.
+   - Can request for slury
+   - Collect their slury from the biogas plant
+
 ## Flow Diagram
 ![flow_diagram](https://github.com/user-attachments/assets/f142d0d1-d119-4fed-9063-edbadb7b00a3)
 
