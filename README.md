@@ -1,6 +1,17 @@
 ## Project Name : EcoFeed
+
+
 # Project Statement : Tackling Food Insecurity and Waste through a Seamless Food Redistribution Platform
-  Our platform focuses on efficiently redistributing surplus edible food by connecting donors, NGOs, and volunteers. When donors provide excess food, the platform categorizes it as edible and immediately assigns it to nearby NGOs for collection and distribution to needy individuals. This real-time coordination ensures that surplus food reaches communities in need quickly, minimizing spoilage and maximizing the positive impact of food donations. By streamlining the donation and distribution process, we help reduce food waste and combat hunger in underserved populations.
+
+## Full video of Project :
+
+https://github.com/user-attachments/assets/4095f3cf-260d-4f09-9e18-030066f513fe
+
+### Description : 
+Our platform focuses on efficiently redistributing surplus edible food by connecting donors, NGOs, and volunteers. When donors provide excess food, the platform categorizes it as edible and immediately assigns it to nearby NGOs for collection and distribution to needy individuals. This real-time coordination ensures that surplus food reaches communities in need quickly, minimizing spoilage and maximizing the positive impact of food donations. By streamlining the donation and distribution process, we help reduce food waste and combat hunger in underserved populations.
+
+
+
 ## Proposed Solution :
 Our platform focuses on efficiently redistributing surplus edible food by connecting donors, NGOs, and volunteers. When donors provide excess food, the platform categorizes it as edible and immediately assigns it to nearby NGOs for collection and distribution to needy individuals. This real-time coordination ensures that surplus food reaches communities in need quickly, minimizing spoilage and maximizing the positive impact of food donations. By streamlining the donation and distribution process, we help reduce food waste and combat hunger in underserved populations.
 
@@ -81,7 +92,7 @@ $dbname = "food_redistribution";
 ## Future Enhancements :
   - AI-based food classification for automatic sorting of food donations.
   - Mobile app for easier access and real-time notifications.
-
+    
 ## Screen Layout :
 
 ![01](https://github.com/user-attachments/assets/e0935e4d-f7d3-404e-ba7f-36c978f093fb)
